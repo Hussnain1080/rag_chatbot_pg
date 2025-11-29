@@ -13,7 +13,7 @@ from langchain_core.documents import Document
 load_dotenv()
 
 # PostgreSQL connection
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:zxM6qDDmJyCPZpvu@postgressimple.cu78kemyebb1.us-east-1.rds.amazonaws.com:5432/postgres")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://
 engine = create_engine(DATABASE_URL, pool_pre_ping=True, pool_size=10, max_overflow=20)
 SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
